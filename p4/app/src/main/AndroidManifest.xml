@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jvega30.project4">
+
+<!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>-->
+
+    <permission android:name="com.jvega30.project4.start" >
+    </permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+        android:label="@string/app_name"
+        android:name=".MusicCentralService"
+        android:exported="true"
+        android:permission="com.jvega30.project4.start">
+        <intent-filter>
+            <action android:name="com.jvega30.project4.MusicCentral" />
+        </intent-filter>
+        </service>
+
+
+        </application>
+
+
+
+</manifest>

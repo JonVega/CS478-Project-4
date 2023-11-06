@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project 4B - MusicClient (Unbounded)</string>
+    <string name="first_button">Bind Service</string>
+    <string name="second_button">Unbind Service</string>
+</resources>
